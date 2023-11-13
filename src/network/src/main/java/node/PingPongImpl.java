@@ -1,4 +1,4 @@
-package server;
+package node;
 
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
@@ -10,6 +10,6 @@ public class PingPongImpl extends UnicastRemoteObject implements PingPongInterfa
 
     @Override
     public String ping(String message) throws RemoteException {
-        return "Server received: " + message;
+        return "Node received: " + message;
     }
 }
