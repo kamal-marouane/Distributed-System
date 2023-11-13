@@ -6,11 +6,11 @@ import node.PingPongInterface;
 public class Master {
     public static void main(String[] args) {
         try {
-            PingPongInterface stub = (PingPongInterface) Naming.lookup("rmi://localhost/PingPong");
-            String response = stub.ping("Hello, Node!");
+            PingPongInterface stub = (PingPongInterface) Naming.lookup("rmi://localhost/Node");
+            String response = stub.ping("Hello, Master!");
             System.out.println("Response: " + response);
         } catch (Exception e) {
-            System.out.println("Client exception: " + e);
+            System.out.println("Master exception: " + e);
         }
     }
 }
