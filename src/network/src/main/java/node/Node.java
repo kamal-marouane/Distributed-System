@@ -19,7 +19,6 @@ public class Node {
             System.out.println("Node failed.\n"+e1);
         }
 
-
     }
 
 }
